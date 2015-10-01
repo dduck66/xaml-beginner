@@ -6,8 +6,18 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.TopAppBar>
+        <AppBar HorizontalContentAlignment="Left">
+            <AppBarButton x:Name="btnHome" 
+                          Icon="Home" 
+                          Label="Home" 
+                          Click="btnHome_Click" 
+                          ToolTipService.ToolTip="Home"  />
+        </AppBar>
+    </Page.TopAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
         <Grid.RowDefinitions>
             <RowDefinition Height="50*"/>
             <RowDefinition Height="20*"/>
@@ -25,9 +35,27 @@
                    HorizontalAlignment="Left" VerticalAlignment="Top" />
         <TextBlock Text="OrderItems:" Grid.Row="1" Grid.Column="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <TextBlock Text="**Add to Order**" Grid.Row="4" Grid.Column="0" 
+
+        <!--Order List-->
+        <ListView x:Name="listOrders" Margin="5"
+                  Grid.Row= "1"
+                  Grid.RowSpan="3"
+                  Grid.Column="0" Background="#FF0DE50D">
+        </ListView>
+
+        <!--Order Item-->
+        <ListView x:Name="listOrderItems" Margin="5"
+                  Grid.Row= "2"
+                  Grid.RowSpan="2"
+                  Grid.Column="2" Background="#FF0E6E91">
+        </ListView>
+
+
+        <Button Content="Add to Order" Grid.Row="4" Grid.Column="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Text="**Submit Order**" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"
+
+        <Button Content="Submit Order" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"
                    HorizontalAlignment="Center" VerticalAlignment="Center" />
+
     </Grid>
 </Page>
