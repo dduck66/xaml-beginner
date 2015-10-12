@@ -5,6 +5,7 @@
     xmlns:local="using:RestaurantManager.UniversalWindows"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:RestaurantManager.Models"
     mc:Ignorable="d">
     <Page.TopAppBar>
         <AppBar>
@@ -22,14 +23,15 @@
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
 
-        <GridView x:Name="listOrders" 
-                  Background="Yellow"
+        <!--OrderItems list-->
+        <GridView x:Name="OrdersItemsList"
+                    ItemsSource="{Binding OrderItems, Source={StaticResource DataManager2}, Mode=TwoWay}"
                   Grid.Row="0"
                   Margin="5">
-            
         </GridView>
-        
-        <Button Content="Clear All Orders" 
+
+        <Button x:Name="ClearAllOrders" Content="Clear All Orders" 
+                Click="ClearAllOrders_Click"
                 Grid.Row="1" 
                 Grid.Column="0" 
                 HorizontalAlignment="Center" 

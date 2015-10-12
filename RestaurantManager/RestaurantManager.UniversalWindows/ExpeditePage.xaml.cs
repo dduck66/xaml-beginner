@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestaurantManager.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,6 +23,7 @@ namespace RestaurantManager.UniversalWindows
     /// </summary>
     public sealed partial class ExpeditePage : Page
     {
+        DataManager dmgr = new DataManager();
         public ExpeditePage()
         {
             this.InitializeComponent();
@@ -30,6 +32,13 @@ namespace RestaurantManager.UniversalWindows
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));
+        }
+
+        private void ClearAllOrders_Click(object sender, RoutedEventArgs e)
+        {
+            dmgr.OrderItems.Clear();
+            OrdersItemsList.ItemsSource = dmgr.OrderItems;
+
         }
     }
 }

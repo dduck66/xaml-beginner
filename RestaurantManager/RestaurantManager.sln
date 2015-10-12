@@ -5,16 +5,21 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManager.UniversalWindows", "RestaurantManager.UniversalWindows\RestaurantManager.UniversalWindows.csproj", "{A2813A3A-C979-4F76-B8B5-60450CBEE072}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManager.Models", "RestaurantManager.Models\RestaurantManager.Models.csproj", "{77AEFEEB-7B8A-499F-A330-76FA23B293DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|ARM = Release|ARM
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2813A3A-C979-4F76-B8B5-60450CBEE072}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{A2813A3A-C979-4F76-B8B5-60450CBEE072}.Debug|ARM.ActiveCfg = Debug|ARM
 		{A2813A3A-C979-4F76-B8B5-60450CBEE072}.Debug|ARM.Build.0 = Debug|ARM
 		{A2813A3A-C979-4F76-B8B5-60450CBEE072}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -24,6 +29,7 @@ Global
 		{A2813A3A-C979-4F76-B8B5-60450CBEE072}.Debug|x86.ActiveCfg = Debug|x86
 		{A2813A3A-C979-4F76-B8B5-60450CBEE072}.Debug|x86.Build.0 = Debug|x86
 		{A2813A3A-C979-4F76-B8B5-60450CBEE072}.Debug|x86.Deploy.0 = Debug|x86
+		{A2813A3A-C979-4F76-B8B5-60450CBEE072}.Release|Any CPU.ActiveCfg = Release|x86
 		{A2813A3A-C979-4F76-B8B5-60450CBEE072}.Release|ARM.ActiveCfg = Release|ARM
 		{A2813A3A-C979-4F76-B8B5-60450CBEE072}.Release|ARM.Build.0 = Release|ARM
 		{A2813A3A-C979-4F76-B8B5-60450CBEE072}.Release|ARM.Deploy.0 = Release|ARM
@@ -33,17 +39,36 @@ Global
 		{A2813A3A-C979-4F76-B8B5-60450CBEE072}.Release|x86.ActiveCfg = Release|x86
 		{A2813A3A-C979-4F76-B8B5-60450CBEE072}.Release|x86.Build.0 = Release|x86
 		{A2813A3A-C979-4F76-B8B5-60450CBEE072}.Release|x86.Deploy.0 = Release|x86
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Debug|ARM.ActiveCfg = Debug|ARM
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Debug|ARM.Build.0 = Debug|ARM
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Debug|x64.ActiveCfg = Debug|x64
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Debug|x64.Build.0 = Debug|x64
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Debug|x86.ActiveCfg = Debug|x86
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Debug|x86.Build.0 = Debug|x86
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Release|ARM.ActiveCfg = Release|ARM
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Release|ARM.Build.0 = Release|ARM
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Release|x64.ActiveCfg = Release|x64
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Release|x64.Build.0 = Release|x64
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Release|x86.ActiveCfg = Release|x86
+		{77AEFEEB-7B8A-499F-A330-76FA23B293DB}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
+		SccNumberOfProjects = 3
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://hkl.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
 		SccProjectUniqueName1 = RestaurantManager.UniversalWindows\\RestaurantManager.UniversalWindows.csproj
 		SccProjectName1 = RestaurantManager.UniversalWindows
 		SccLocalPath1 = RestaurantManager.UniversalWindows
+		SccProjectUniqueName2 = RestaurantManager.Models\\RestaurantManager.Models.csproj
+		SccProjectName2 = RestaurantManager.Models
+		SccLocalPath2 = RestaurantManager.Models
 	EndGlobalSection
 EndGlobal

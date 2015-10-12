@@ -17,9 +17,9 @@
             <RowDefinition Height="11*"/>
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
-
+        
         <TextBlock Text="Restaurant Manager" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
-                   HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="48" />
+                   HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="48" FontWeight="ExtraBold"/>
         
         <TextBlock Text="Internal Test Version" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" 
                    HorizontalAlignment="Center" VerticalAlignment="Bottom" />
